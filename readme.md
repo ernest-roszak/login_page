@@ -1,18 +1,19 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://ernest-roszak.github.io/ErnestRoszak.png)
 
-# WTF Webpack Starter Kit 
+# ERNEST ROSZAK - JUNIOR FRONTEND DEVELOPER
 
-Simple toolkit for your static websites development.
+My simple portfolio website
 
-## How to use it?
+## TOOLS
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+-webpack starter kit
 
-## Available scripts
+-HTML + CSS + JS
 
-`npm run start` - runs development mode
+-GitHub API
 
-`npm run build` - runs build process for production
+-CSS Grid
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
+-CSS Flex
+
 
