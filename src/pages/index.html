@@ -30,12 +30,16 @@
         <div class="post__user">
           <img src="../assets/img/mini.jpg" alt="user profile photo" class="post__user--img" />
           <h2 class="post__user--name">Ernest Roszak</h2>
-          <label for="privacy"></label>
-          <select class="post__user--privacy" name="privacy" id="pet-select">
-            <option value="public">Public</option>
-            <option value="private">Private</option>
-            <option value="friends">Only friends</option>
-          </select>
+          <div class="privacy__default">
+          <ul class="privacy__default--option privacy__default--active">
+            <li class="privacy__item--public">Public</li>
+          </ul>
+          <ul class="privacy__list">
+            <li class="privacy__item privacy__item--public">Public</li>
+            <li class="privacy__item privacy__item--private">Private</li>
+            <li class="privacy__item privacy__item--friends">Only friends</li>
+          </ul>
+        </div>
         </div>
           <textarea name="post__content"></textarea>
           <label for="media">Add picture:</label>
@@ -45,7 +49,7 @@
             name="media"
             accept="image/png, image/jpeg"
           />
-        
+          
           <label>Location:</label>
           <input id="location" type="text" name="location">
           <label>Key word:</label>

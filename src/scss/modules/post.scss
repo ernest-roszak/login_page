@@ -9,7 +9,6 @@
   &__header {
     display: flex;
     border: 1px sloid #eee;
-    
   }
   &__title {
     margin: 18px auto;
@@ -19,34 +18,29 @@
     justify-self: self-end;
     border-radius: 50%;
     background: lightgray;
-    padding: 14px;
+    padding: 8px 12px;
     font-size: 20px;
     font-weight: bold;
     margin-right: 16px;
   }
+  
+  
   &__user {
-      display: grid;
-      grid-template-areas: 
+    display: grid;
+    grid-template-areas:
       "photo name"
       "photo select";
-      grid-template-columns: 100px 1fr;
-      margin: 10px;
+    grid-template-columns: 100px 1fr;
+    margin: 10px;
     &--img {
-        grid-area: photo;
+      grid-area: photo;
       width: 90px;
       height: 90px;
       border-radius: 50%;
     }
-    &--privacy {
-        grid-area: select;
-        max-width: fit-content;
-        background: darkgray;
-        border-radius: 8px;
-        
-    }
     &--name {
-        grid-area: name;
-        margin-bottom: 0;
+      grid-area: name;
+      margin-bottom: 0;
     }
   }
 }

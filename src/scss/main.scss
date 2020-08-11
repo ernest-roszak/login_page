@@ -2,6 +2,9 @@
 
 @import "_variables";
 @import "modules/post.scss";
+@import "modules/privacy.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600&display=swap');
 
 body {
   background: #eee;
@@ -10,4 +13,5 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Baloo Tamma 2', cursive;
 }

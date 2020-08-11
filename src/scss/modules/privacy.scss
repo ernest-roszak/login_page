@@ -1,0 +1,97 @@
+.privacy {
+  &__default {
+    &--option {
+      background: darkgray;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 5px 10px;
+      margin: 0;
+      max-width: 150px;
+      margin-top: 0;
+      font-weight: bold;
+      list-style-type: none;
+      position: relative;
+      padding-left: 32px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 12px;
+        width: 8px;
+        height: 8px;
+        border: 2px solid;
+        border-color: transparent transparent #000 #000;
+        transform: rotate(-45deg);
+      }
+    }
+      &--active {
+        &::before {
+          transform: rotate(-225deg);
+          top: 12px
+        }
+      }
+    
+  }
+  &__list {
+    font-weight: bold;
+    list-style-type: none;
+    margin-left: 0;
+    cursor: pointer;
+    padding: 10px 0;
+    max-width: 150px;
+    margin: 0;
+  }
+  &__item {
+    padding: 5px 10px;
+    background: darkgray;
+    position: relative;
+    padding-left: 32px;
+    &:hover {
+      background: lightgray;
+    }
+    &:first-child {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    &--public {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/globe-africa.svg);
+      }
+    }
+    &--private {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/lock.svg);
+      }
+    }
+    &--friends {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 8px;
+        width: 14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-image: url(../assets/img/user-friends.svg);
+      }
+    }
+  }
+}
