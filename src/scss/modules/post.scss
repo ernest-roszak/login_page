@@ -6,6 +6,7 @@
   box-shadow: 0px 1px 44px 25px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 10px;
+  display: none;
   &__header {
     display: flex;
     border-bottom: 2px solid darkgray;
@@ -22,6 +23,13 @@
     font-size: 20px;
     font-weight: bold;
     margin-right: 16px;
+    &--image {
+        top: 10px;
+        right: 0;
+        position: absolute;
+        display: none;
+        cursor: pointer;
+    }
   }
 
   &__user {
@@ -62,11 +70,15 @@
     font-weight: bold;
     color: darkgray;
     font-size: 24px;
+    position: relative;
     &--image {
       display: none;
       width: 100%;
       max-height: 300px;
     }
+  }
+  &__activeButton {
+    transform: scale(1.2);
   }
   &__media {
     content: "Select some files";

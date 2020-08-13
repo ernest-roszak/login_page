@@ -21,11 +21,14 @@
     />
   </head>
   <body>
-    <main class="post">
+    <div>
+      <button class="post__submit post__submit--add add--js">UPLOAD</button>
+    </div>
+    <main class="post post--js">
       <section class="post__section">
         <div class="post__header">
         <h1 class="post__title">Create Post</h1>
-        <span class="post__close">X</span>
+        <span class="post__close closeAdd--js">X</span>
       </div>
         <div class="post__user">
           <img src="../assets/img/mini.jpg" alt="user profile photo" class="post__user--img" />
@@ -42,8 +45,9 @@
         </div>
         </div>
         
-          <textarea class="post__textarea" name="post__textarea" placeholder="Ernest, what are you thinking ?"></textarea>
+          <textarea class="post__textarea" required name="post__textarea" placeholder="Ernest, what are you thinking ?"></textarea>
           <div class="post__imagePreview">
+            <span class="post__close post__close--image close--js">X</span>
             <img src="#" id="image" alt="Image Preview" class="post__imagePreview--image">
             <span class="post__imagePreview--placeholder">Add your image</span>
             <input
@@ -56,17 +60,17 @@
           
             <fieldset class="post__fieldset">
               <div>
-          <label class="post__label--location">Location:
-          <input class="post__input--location" id="location" type="text" name="location"></label>
+          <label class="post__label--location">Location:</label>
+          <input class="post__input--location location--js" required id="location" type="text" name="location">
         </div>
         <div>
-          <label class="post__label--keyWord">Key word:
-          <input class="post__input--keyWord" id="keyword" type="text" name="keyword"></label>
+          <label class="post__label--keyWord">Key word:</label>
+          <input class="post__input--keyWord keyWord--js" required id="keyword" type="text" name="keyword">
         </div>
             </fieldset>
       
           <div>
-            <button class="post__submit">Write post</button>
+            <button class="post__submit submit--js">Write post</button>
           </div>
         
       </section>
