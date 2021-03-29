@@ -32,7 +32,7 @@ Go on http://localhost:8080
 
 ## Status
 
-Project is: _no longer continue_, I will add my new projects in the future.
+Project is: _no longer continue_, I will create better React version in the future.
 
 ## Contact
 
